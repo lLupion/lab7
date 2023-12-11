@@ -39,18 +39,21 @@ int main(){
 
     cout << "Fahsai: Let's go to the cinema together!!!\n" ;
     cout << "Fahsai: What movie do you want to watch?\n" ;
+    cin.ignore();
     string movie;
     cout << name << ": ";
-    getline(cin, movie);
+    getline(cin, movie); 
     cout << "Fahsai: So....which day are you free to go with me?\n";
+    //cin.ignore();
     string day;
     cout << name << ": ";
     getline(cin, day);
     cout << "Fahsai: " << day << "....that is OK!!! I'm looking forward to watching " << movie <<" with you.\n";
+    
     string text;
     cout << name << ": ";
     getline(cin, text);
-    cout << "Fahsai: 555+ see you Next Monday. Bye Bye ";
+    cout << "Fahsai: 555+ see you " << day << ". Bye Bye " << R"(\(^ ^)/)";
 
     return 0;
 }   
